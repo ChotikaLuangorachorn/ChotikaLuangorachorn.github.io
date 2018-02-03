@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questions</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Baloo|Kanit');
+		*{
+			font-family: 'Kanit', sans-serif; font-size: 1.1em;
+		}
+		body{
+			background: url(math_background.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.kanit{font-family: 'Kanit', sans-serif;}
+		.baloo{font-family: 'Baloo', cursive;}
+		[class*="col-"] {
+		    padding: 5px;
+		}
+		.btn{
+		    background-color: white;
+		    color: green;
+		    width: 100%;
+		}
+		.btn:hover {
+		    background-color: green;
+		    color: white
+		}
+
+		.row-3 > .col-6{
+			float: left;
+		}
+		.row-1{
+			text-align: center;
+		}
+		h3{
+			display: inline;
+		}
+		.container{
+
+			background: rgba(102, 255, 204, 0.8);
+			margin-top: 5%;
+			margin-bottom: 5%;
+			padding: 4%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="home">
+			<div class="row-1">
+				<div class="col-12">
+					<h1>คณิตคิดไว</h1><br>
+					><><><><><<br>
+					เลือกจำนวนคำถาม
+				</div>
+			</div>
+			<div class="row-2" align="center">	
+				<div class="col-sm-12 col-md-6">
+					<button class="btn" id="10q-btn">10 คำถาม</button>
+				</div>		
+				<div class="col-sm-12 col-md-6">
+					<button class="btn" id="20q-btn">20 คำถาม</button>
+				</div>
+			</div>
+		</div>
+		<div id="question">
+			<div class="row-3">
+				<div class="col-6" align="left">
+					<h3>คะแนน: </h3>
+					<h3 id="score">0</h3>
+				</div>
+				<div class="col-6" align="right">
+					<h3 id="timer">0</h3>
+					<i class="fa fa-clock-o" style="font-size:40px;color:red"></i>
+
+				</div>
+			</div>
+			<div class="row-4">
+				<div class="col-12">
+					<h4 id="question-text">??</h4>
+				</div>
+			</div>
+			<center>
+				<div class="row-5">
+					<div class="col-sm-12 col-md-6">
+						<button class="btn" id="ans-1" style="width: 100%; height: 100%;"></button>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<button class="btn" id="ans-2" style="width: 100%; height: 100%""></button>
+					</div>
+				</div>
+				
+				<div class="row-6">
+					<div class="col-sm-12 col-md-6">
+						<button class="btn" id="ans-3"></button>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<button class="btn" id="ans-4" style="width: 100%; height: 100%"></button>
+					</div>
+				</div>
+				<div class="row-6">
+					<div class="col-sm-12 col-md-6">
+						<div id="ans"></div>
+					</div>
+				</div>
+			</center>
+		</div>
+		<div id="result" align="center">
+			<div class="row-7">
+				<div class="col-3" align="center">
+					<h1>คณิตคิดไว</h1><br>
+					<h3>คะแนนของคุณ</h3>
+					<h3 id="score-result">0</h3><br>
+					<button class="btn" id="back-to-home">เริ่มใหม่</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="app.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+</body>
+</html>
