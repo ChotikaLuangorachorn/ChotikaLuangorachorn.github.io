@@ -116,6 +116,7 @@ function updateQuestion(){
 	$("#ans-2").text("2) " + current_question.choice[1]);
 	$("#ans-3").text("3) " + current_question.choice[2]);
 	$("#ans-4").text("4) " + current_question.choice[3]);
+	$("#image").attr("src",current_question.image);
 }
 function updateScore(){
 	$("#score").text(score);
